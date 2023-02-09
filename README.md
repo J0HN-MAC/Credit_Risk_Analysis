@@ -9,8 +9,8 @@ This study employs various machine learning models and sampling techniques to pr
 
 ***Naive Random Oversampling***
 ![This is an image](Images/naive_random.png)
-- **balanced accuracy score:** (63%) is a metric which measures the model's accuaracy in predicting correct classifications. Balanced accuracy works better for imbalanced datasets. This dataset is imbalanced since the low-risk loans far outweigh the high-risk loans.
-- **precision:** Of the predicted high risk loans (50 + 5408), only around 1% (50) were accurate. A low precision score indicates there were a large number of false positives for high-risk loans. Of the predicted low-risk loans (11,710 + 37), almost 100% (11,710) were accurate. A high precision score means 
+- **balanced accuracy score:** (63%) is a metric which measures the model's accuaracy in predicting correct classifications. The balanced accuracy score works better for imbalanced datasets. This dataset is imbalanced since the low-risk loans far outnumber the high-risk loans.
+- **precision:** Of the predicted high risk loans (50 + 5408), only around 1% (50) were accurate. A low precision score indicates there were a large number of false positives for high-risk loans. Of the predicted low-risk loans (11,710 + 37), almost 100% (11,710) were accurate. A high precision score means a high percentage of targets were identified, but there may be a large amount of false negatives (5,408).
 - **recall score:** (sensitivity) is the ability of the model to find all the positive samples. For all the high-risk loans (50 + 37), this model was able to find 57% (50). For all the low-risk loans (5,408 + 11,710), this model predicted 68% (11,710) of them. A test with high recall means few false negatives, but there may be a high number of false positives. A low recall indicates a large number of false negatives.
 
 ***SMOTE Oversampling***
@@ -29,7 +29,7 @@ This study employs various machine learning models and sampling techniques to pr
 
 ### Combination (Over and Under) Sampling
 
-***Combination of Over- and Undersampling: SMOTEENN***
+***Combination of Over- and Undersampling using SMOTEENN***
 ![This is an image](Images/smoteen.png)
 - **balanced accuracy score:** 65%
 - **precision:** high-risk 1%, low-risk 100%
